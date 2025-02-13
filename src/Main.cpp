@@ -22,10 +22,12 @@ int main() {
             cout << "Qual a unidade de origem?" << endl;
             cout << "C - Celsius | K - Kelvin | F - Fahrenheit" << endl;
             cin >> origem;
+	    origem = toupper(origem[0]);
 
             cout << "Qual a unidade de destino?" << endl;
             cout << "C - Celsius | K - Kelvin | F - Fahrenheit" << endl;
             cin >> destino;
+	    destino = toupper(destino[0]);
 
             Temperatura* temperatura = new Temperatura(valor, origem);
             Conversor* conversor = new Conversor();
@@ -42,10 +44,13 @@ int main() {
             cout << "Qual a unidade de origem?" << endl;
             cout << "M - Metro | P - Pes" << endl;
             cin >> origem;
+	    origem = toupper(origem[0]);
+
 
             cout << "Qual a unidade de destino?" << endl;
             cout << "M - Metro | P - Pes" << endl;
             cin >> destino;
+	    destino = toupper(destino[0]);
 
             Medida* medida = new Medida(valor, origem);
             Conversor* conversor = new Conversor();
